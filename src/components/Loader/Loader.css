@@ -1,0 +1,70 @@
+.container {
+  width: 100%;
+  /* calcula el valor real del vh y restarlo por el valor del alto del menu */
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  animation: blur 0.5s 2s forwards;
+}
+@keyframes blur {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+}
+
+.logo__group {
+  stroke-width: 1.2px;
+  stroke: #fc3a52;
+}
+
+.first__triangle {
+  stroke-dasharray: 70px;
+  stroke-dashoffset: 0;
+  animation: first 1.5s forwards;
+}
+@keyframes first {
+  0% {
+    stroke-dashoffset: 70px;
+  }
+  100% {
+    stroke-dashoffset: 140px;
+  }
+}
+
+.second__triangle {
+  stroke-dasharray: 85px;
+  stroke-dashoffset: 85px;
+  animation: second 1.5s 0.7s forwards ease-out;
+}
+@keyframes second {
+  0% {
+    stroke-dashoffset: 85px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.third__triangle {
+  stroke-dasharray: 85px;
+  stroke-dashoffset: 85px;
+  animation: third 1.5s 0.9s forwards ease-out;
+}
+@keyframes third {
+  0% {
+    stroke-dashoffset: 85px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

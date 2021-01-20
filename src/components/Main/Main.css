@@ -1,0 +1,9 @@
+.main {
+  padding: 1rem 10%;
+}
+
+@media (min-width: 700px) {
+  .main {
+    padding: 3rem 25%;
+  }
+}

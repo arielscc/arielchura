@@ -1,0 +1,131 @@
+.header {
+  font-family: 'JetBrains mono';
+  left: 0;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu--button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  /* position: relative; */
+  z-index: 10;
+}
+
+.header__nav {
+  position: fixed;
+  left: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+  margin: 0;
+  background: var(--third-color);
+  padding: 3rem;
+  transition: 0.3s ease-in-out;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__nav-show {
+  left: 30%;
+}
+
+.header__nav li {
+  counter-increment: my-awesome-counter;
+  list-style: none;
+}
+.header__nav li::before {
+  content: '0' counter(my-awesome-counter);
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 1.2rem;
+  margin-left: 0.7rem;
+}
+
+.header__nav a:hover {
+  color: var(--secondary-color);
+}
+
+.header__nav span {
+  vertical-align: super;
+  color: var(--secondary-color);
+}
+
+.header__blur {
+  background-color: teal;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(2px);
+}
+
+@media (min-width: 700px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -40%;
+  }
+  .header__menu--button {
+    display: none;
+  }
+  .header__nav {
+    padding: 0;
+    background-color: inherit;
+    flex-direction: row;
+    display: flex;
+    position: inherit;
+  }
+  .header__blur {
+    display: none;
+  }
+  .header__nav a {
+    font-size: 1rem;
+  }
+  .header__nav li::before {
+    font-size: 1.2rem;
+  }
+
+  /* Iconos para sociales */
+  /* .social__container {
+    margin-left: 0;
+    display: inline-block;
+    position: fixed;
+    left: 5%;
+    bottom: 10%;
+  }
+  .social__container svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--white-color);
+  }
+  .social__container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .social__container a:hover svg {
+    transition: 0.2s ease-in-out;
+    transform: translateY(-5px);
+    fill: var(--secondary-color);
+  } */
+}
