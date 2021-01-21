@@ -11,7 +11,7 @@ function App() {
     }, 2800);
   }, [loader]);
 
-  return <div>{loader ? <Loader /> : <Main />}</div>;
+  return <div>{false ? <Loader /> : <Main />}</div>;
 }
 
 export default App;

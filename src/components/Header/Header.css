@@ -48,12 +48,13 @@
 @media (min-width: 700px) {
   .main__container {
     font-size: 1vw;
+    min-height: 100vh;
   }
   .main__name {
-    font-size: 5.2vw;
+    font-size: 4.5vw;
   }
   .main__title {
-    font-size: 3.6vw;
+    font-size: 3.5vw;
   }
   .main__description {
     font-size: 1.2rem;
@@ -61,7 +62,7 @@
     max-width: 600px;
   }
   .main__contact {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1rem 1.8rem;
   }
   .main__contact:hover {
