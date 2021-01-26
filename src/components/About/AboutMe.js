@@ -27,18 +27,19 @@ export const AboutMe = () => {
         </figure>
         <div className="about__description">
           <p>
-            ¡Hola! Soy Ariel Chura, Soy ingeniero de sistemas y soy La Paz,
-            Bolivia. Disfruto creando cosas que estén en Internet, ya sean
-            sitios web, o cualquier otra cosa. Mi objetivo es siempre crear
-            productos que proporcionen experiencias de rendimiento y
-            accesibilidad.
+            ¡Hola! Soy Ariel Chura, Soy ingeniero de sistemas y soy La
+            Paz, Bolivia. Disfruto creando cosas que estén en
+            Internet, ya sean sitios web, o cualquier otra cosa. Mi
+            objetivo es siempre crear productos que proporcionen
+            experiencias de rendimiento y accesibilidad.
           </p>
           <p>
-            Mientras cursaba los ultimos años de mi carrera. Me uní al equipo de
-            Tic-facultativo de la{' '}
+            Mientras cursaba los ultimos años de mi carrera. Me uní al
+            equipo de Tic-facultativo de la{' '}
             <a
               href="http://www.fcpn.edu.bo/"
               target="_blank"
+              rel="noreferrer"
               className="about__description--link"
             >
               Facultad de ciencias puras y naturales
@@ -50,19 +51,21 @@ export const AboutMe = () => {
         <div className="skills about__description">
           <h3>Habilidades</h3>
           <p>
-            Estas son las herramientas con las que me permití explorar y crear
-            algunas cosas:
+            Estas son las herramientas con las que me permití explorar
+            y crear algunas cosas:
           </p>
           <div className="skills__container">
-            {skillNames.map((skill) => {
+            {skillNames.map(skill => {
               return (
-                <div key={skill} className="skill__container">
+                <div key={skill}>
                   <h4 className="skill__type">{skill}</h4>
                   <div className="grid">
-                    {skills[skill].map((item) => {
+                    {skills[skill].map(item => {
                       return (
                         <div key={item} className="grid__item">
-                          <div className="skill__image">{Getsvg(item)}</div>
+                          <div className="skill__image">
+                            {Getsvg(item)}
+                          </div>
                           <p>{item}</p>
                         </div>
                       );

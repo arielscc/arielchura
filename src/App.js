@@ -5,11 +5,14 @@ import { Main } from './components/Main/Main';
 function App() {
   const [loader, setLoader] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoader(false);
-    }, 2800);
-  }, [loader]);
+  useEffect(
+    any => {
+      setTimeout(() => {
+        setLoader(false);
+      }, 2800);
+    },
+    [loader]
+  );
 
   return <div>{false ? <Loader /> : <Main />}</div>;
 }
