@@ -85,7 +85,6 @@
 }
 
 .grid__item {
-  border: 2px var(--white-color) solid;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -93,7 +92,7 @@
   align-items: center;
   padding: 1rem;
   background: var(--third-color);
-  min-width: 90px;
+  min-width: 70px;
 }
 .skills {
   font-size: 1.2rem;
@@ -109,7 +108,7 @@
   fill: currentColor;
 }
 .grid__item p {
-  margin: 0;
+  font-size: .8rem;
 }
 
 .skill__type {
