@@ -1,6 +1,19 @@
 import './Experience.css'
-export const Experience = () => {
+const content = [
+  {
+    id: 1,
+    institution: 'Facultad de ciencias puras y naturales',
+    date: '2018 - 2019',
+    sigla: 'TIC - FCPN',
+    work: {
+      intro: 'En esta unidad, justo a un equipo nos encargabamos de desarrollar y dar soporte a sistemas de la facultad.',
+      lab: 'Mi labor era dar soporte a sistemas administrativos, esto con el fin de corregir errores en sistemas, bugs y demas. Tambien me encargaba de mantener la red y la infraestructura de la facultad, administrando base de datos y verficando su perfecto estado',
+      fac: 'Comunicacion constante con el personal administrativo y el equipo TIC, para ver sus necesidades y corregirlas.'
+    }
+  }
 
+]
+export const Experience = () => {
   return (
     <section className="experience">
       <div className="experience__container">
