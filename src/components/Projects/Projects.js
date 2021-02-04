@@ -7,7 +7,7 @@ export const Projects = () => {
         <div className="project">
           <figure>
             <img
-              src="./assets/projects/intercambio-btc.png"
+              src="./assets/projects/intercambio-btc.jpg"
               alt="proyecto de intercambio"
               className="project_img"
             />
@@ -64,7 +64,7 @@ export const Projects = () => {
         <div className="project">
           <figure>
             <img
-              src="./assets/projects/heroes-app.png"
+              src="./assets/projects/heroes-app.jpg"
               alt="proyecto de intercambio"
               className="project_img"
             />
@@ -121,7 +121,7 @@ export const Projects = () => {
         <div className="project">
           <figure>
             <img
-              src="./assets/projects/heroes-app.png"
+              src="./assets/projects/heroes-app.jpg"
               alt="proyecto de intercambio"
               className="project_img"
             />
