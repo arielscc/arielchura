@@ -31,7 +31,7 @@
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
-  min-height: 400px;
+  min-height: 600px;
 }
 .exp_title {
   font-size: 1rem;
@@ -116,5 +116,8 @@ input {
   }
   .exp_desc {
     font-size: 1.1rem;
+  }
+  .exp__card {
+    min-height: 400px;
   }
 }
