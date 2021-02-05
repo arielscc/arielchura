@@ -176,7 +176,6 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="secondary__projects"></div>
     </section>
   );
 };
